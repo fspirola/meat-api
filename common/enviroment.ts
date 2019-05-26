@@ -1,8 +1,20 @@
 export const enviroment = {
-    server: {port: process.env.SERVER_PORT || 3000},
-    db: {url: process.env.DB_URL || 'mongodb://localhost/meat-api'},
+    /*serverAz: {port: process.env.SERVER_PORT || 3000
+    },
+    dbAz: {url: process.env.DB_URL || 'mongodb://localhost/meat-api'},
+    securityAz: { 
+        saltRounds: process.env.SALT_ROUNDS || 10,
+        apiSecret: process.env.API_SECRET || 'meat-api-secret'
+    },*/
+
+    server: {port: process.env.SERVER_PORT || 3000,
+        //user: process.env.SERVER_USER || 'fiap1blc',
+        //pass: process.env.SERVER_PASSWORD || '4omGp7rUcrZ53xWU9Me9BUhpylfM2KljSyJWL2A4uG4B7I9gl3uVCIvqUcKLmPWQi1LRbW0c2kV19RXwxSMDdg=='
+    },
+    db: {url: process.env.DB_URL || 'mongodb://fiap1blc:4omGp7rUcrZ53xWU9Me9BUhpylfM2KljSyJWL2A4uG4B7I9gl3uVCIvqUcKLmPWQi1LRbW0c2kV19RXwxSMDdg==@fiap1blc.documents.azure.com:10255/?ssl=true&replicaSet=globaldb'},
     security: { 
         saltRounds: process.env.SALT_ROUNDS || 10,
         apiSecret: process.env.API_SECRET || 'meat-api-secret'
     }
+    
 }
