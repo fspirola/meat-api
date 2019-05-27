@@ -4,6 +4,7 @@
   "description": "API de Restaurantes",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "ts-node jest.startup.ts"
   },
   "keywords": [],
@@ -11,7 +12,7 @@
   "license": "ISC",
   "jest": {
     "globals": {
-      "address": "https://meat-api.azurewebsites.net:3001"
+      "address": "https://meat-api.azurewebsites.net:5000"
     },
     "testEnvironment": "node",
     "verbose": true,
