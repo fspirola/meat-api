@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
     name   : "meat-api",
-    script : "meat-api/dist/main.js",
+    script : "/dist/main.js",
     instances: 0,
     exec_mode: "cluster",
     env: {
