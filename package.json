@@ -12,7 +12,7 @@
   "license": "ISC",
   "jest": {
     "globals": {
-      "address": "https://meat-api.azurewebsites.net:5000"
+      "address": "https://meat-apiv2.azurewebsites.net:5000"
     },
     "testEnvironment": "node",
     "verbose": true,
